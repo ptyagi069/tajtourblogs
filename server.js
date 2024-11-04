@@ -19,8 +19,8 @@ const dbConfig = {
 };
 
 const app = express();
-const port = 3000;
-// const port = process.env.PORT;
+// const port = 3000;
+11const port = process.env.PORT;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -270,10 +270,6 @@ app.get("/api/latest-blogs-tajmahal-tours", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
-
-
-
 
 
 //culture magazine-apis hehe
